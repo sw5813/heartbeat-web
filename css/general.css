@@ -8,6 +8,8 @@
     src: url(../fonts/myriad-pro/MYRIADPRO-REGULAR.woff);
 }
 
+/* coca-cola red: #FF0707*/
+
 /*General */
 
 body, html {
@@ -37,7 +39,7 @@ video#bgvid {
 .content-section-c {
 	border-top: 1px solid #32465A;
 	border-bottom: 1px solid #32465A;
-	background-color: #34495e;
+	background-color: #980000  ;
 	padding: 90px 0;
 }
 
@@ -327,35 +329,13 @@ color: #ECEBEB;
 .banner {
 	padding: 100px 0;
 	color: white;
-	background-color: #32465A;
+	background-color: #980000 ;
 
 }
-
-/* Animate */
-.rotate{
-    -webkit-transition-duration: 0.8s;
-    -moz-transition-duration: 0.8s;
-    -o-transition-duration: 0.8s;
-    transition-duration: 0.8s;
-     
-    -webkit-transition-property: -webkit-transform;
-    -moz-transition-property: -moz-transform;
-    -o-transition-property: -o-transform;
-    transition-property: transform;
-     
-    overflow:hidden;
+.signup input {
+	float:left;
+}
  
-    }  
- 
-.rotate:hover  
-{
-    -webkit-transform:rotate(360deg);
-    -moz-transform:rotate(360deg);
-    -o-transform:rotate(360deg);
-}  
-
-
-
 /* Style for form modal */
 .content-style-form {
 	position: relative;

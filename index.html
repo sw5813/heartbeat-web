@@ -49,7 +49,11 @@
 			<img class="img-responsive" src = "img/logo/logo_w.png" style="width:100%;margin:auto">
 
 			<video autoplay loop muted poster="img/road.jpg" id="bgvid">
+				<source src="assets/running.webm" type="video/webm">
 				<source src="assets/running.mp4" type="video/mp4">
+				<object type="application/x-shockwave-flash" data="player.swf?file=running.mp4">
+					<param name="movie" value="player.swf?file=running.mp4">
+				</object>
 			</video>
 
 			<h1 class="h1_home wow fadeIn" data-wow-delay="0.4s" style="">HEARTBEAT</h1>
@@ -123,33 +127,24 @@
 
 
 	<!-- Sign Up -->
-	<div  class="content-section-c " id="signup" >
-		<div 
-	</div>class="container">
+	<div  class="content-section-c" id="signup" style="border:0">
+		<div class="container">
 			<div class="row">
 			<div class="col-md-6 col-md-offset-3 text-center white">
 				<h2>Stay in Sync.</h2>
 				<p class="lead" style="margin-top:0">We'll email you when Heartbeat is available on Google Play!</p>
 			</div>
-			<div class="col-md-6 col-md-offset-3 text-center">
-				<div class="mockup-content">
-						<div class="morph-button wow pulse morph-button-inflow morph-button-inflow-1">
-							<button type="button "><span>Subscribe to Newsletter</span></button>
-							<div class="morph-content">
-								<div>
-									<div class="content-style-form content-style-form-4 ">
-										<h2 class="morph-clone">Subscribe to Newsletter</h2>
-										<form>
-											<p><label>Email</label><input type="text"/></p>
-											<p><button>Connect Me!</button></p>
-										</form>
-									</div>
-								</div>
-							</div>
-						</div>
-				</div>
+			<div class="col-md-6 col-md-offset-3 text-center wow pulse" class="content-style-form content-style-form-4 ">
+				 <form style="text-align:center" action="https://tinyletter.com/sw5813" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/sw5813', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
+				 	<div class="signup">
+					 	<p><input type="text" name="email" id="tlemail" placeholder="Email" /></p>
+					 	<input type="hidden" value="1" name="embed"/>
+					 	<input type="submit" value="Sign Up" />
+					</div>
+				</form>
+         
 			</div>	
-			</div>>
+			</div>
 		</div>
 	</div>
 
@@ -164,22 +159,22 @@
 			<div class="row" id="iconeggs" style="width:100%">
 			
 				<div class="col-sm-3 wow fadeInDown text-center">
-				  <img class="rotate img-responsive" src="img/icon_minimal.png" alt="minimal egg">
+				  <img class="img-responsive" src="holder.js/300x300" alt="Coca-Cola">
 				  <h3>Coca-Cola</h3>
 				</div><!-- /.col-lg-4 -->
 				
 				<div class="col-sm-3 wow fadeInDown text-center">
-				  <img  class="rotate img-responsive" src="img/icon_personal.png" alt="personal egg">
+				  <img  class="img-responsive" src="holder.js/300x300" alt="yeiSPARK">
 				   <h3>Yale Entrepreneurial Institute</h3>
 				</div><!-- /.col-lg-4 -->
 				
 				<div class="col-sm-3 wow fadeInDown text-center">
-				  <img  class="rotate img-responsive" src="img/icon_fun.png" alt="fun egg">
+				  <img  class="img-responsive" src="holder.js/300x300" alt="Misfit">
 				   <h3>Misfit</h3>
 				</div><!-- /.col-lg-4 -->
 
 				<div class="col-sm-3 wow fadeInDown text-center">
-				  <img  class="rotate img-responsive" src="img/icon_fun.png" alt="fun egg">
+				  <img  class="img-responsive" src="holder.js/300x300" alt="Spotify">
 				   <h3>Spotify</h3>
 				</div><!-- /.col-lg-4 -->
 				

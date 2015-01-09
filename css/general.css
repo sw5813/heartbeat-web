@@ -8,7 +8,7 @@
     src: url(../fonts/myriad-pro/MYRIADPRO-REGULAR.woff);
 }
 
-/* coca-cola red: #FF0707*/
+/* coca-cola red: #FF0707, I'm using: 980000*/
 
 /*General */
 
@@ -368,10 +368,10 @@ color: #ECEBEB;
 	font-weight: bold;
 }
 
-.content-style-form input[type="text"],
+.content-style-form input[type="email"],
 .content-style-form input[type="password"] {
 	padding: 10px;
-	width: 100%;
+	width: 70%;
 	border: 2px solid #ebd3bd;
 	background: transparent;
 	color: #b09a86;
@@ -379,7 +379,7 @@ color: #ECEBEB;
 	font-size: 2.2em;
 }
 
-.content-style-form input[type="text"]:focus,
+.content-style-form input[type="email"]:focus,
 .content-style-form input[type="password"]:focus {
 	border-color: #e75854;
 	color: #e75854;
@@ -389,11 +389,10 @@ color: #ECEBEB;
 	outline: 0;
 }
 
-.content-style-form button {
+.content-style-form input[type="submit"] {
 	display: block;
-	margin-top: 2.5em;
-	padding: 1.5em;
-	width: 100%;
+	padding: 0.80em;
+	width: 30%;
 	border: none;
 	background: #e75854;
 	color: #fff;

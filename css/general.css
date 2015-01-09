@@ -1,3 +1,13 @@
+@font-face {
+    font-family: myriadpro;
+    src: url(../fonts/myriad-pro/MYRIADPRO-COND.woff);
+}
+
+@font-face {
+    font-family: myriadproreg;
+    src: url(../fonts/myriad-pro/MYRIADPRO-REGULAR.woff);
+}
+
 /*General */
 
 body, html {
@@ -10,9 +20,19 @@ body, html {
 
 ::selection{background:#1abc9c;color:#FFF}
 
-.abcen{position: absolute;bottom: 8%;}
+.abcen{position: absolute;bottom: 1%;}
 
 .abcen1{position: absolute;top: 20%;}
+
+video#bgvid {
+	position: fixed; right: 0; bottom: 0;
+	min-width: 100%; min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: -100;
+	background: url(../img/road.jpg) no-repeat;
+	background-size: cover;
+}
 
 .content-section-c {
 	border-top: 1px solid #32465A;
@@ -65,10 +85,10 @@ margin: auto;
 }
 
 .h1_home{
-	font-size: 80px;
-	font-family: arvo;
+	font-size: 60px;
+	font-family: myriadpro;
 	font-weight: 300;
-	letter-spacing: 6px;
+	letter-spacing: 4px;
 }
 
 .h3_home{font-weight: 300;}
@@ -119,7 +139,7 @@ filter: alpha(opacity=95) !important;
 	position:absolute;
 	left:50%; /* centers the loading animation horizontally one the screen */
 	top:50%; /* centers the loading animation vertically one the screen */
-	background-image:url(../img/load2.gif); /* path to your loading animation */
+	background-image:url(../img/load.gif); /* path to your loading animation */
 	background-repeat:no-repeat;
 	background-position:center;
 	margin:-100px 0 0 -100px; /* is width and height divided by two */
@@ -223,7 +243,7 @@ color: #ECEBEB;
 }
 
 .navbar-brand {
-	font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: myriadproreg, "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	letter-spacing: 3px;
 	font-weight: 400 !important;
 }
@@ -238,9 +258,8 @@ color: #ECEBEB;
 	padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
 	padding-bottom: 50px;
 	color: #f8f8f8;
-	background-color:#3A4B9F;
-	/*background: url(../assets/lead/cover.png) no-repeat center center;
-	background-size: cover; */
+	/*background-color:#3A4B9F;*/
+	background-size: cover;
 	text-align: center;
 }
 
@@ -256,7 +275,7 @@ color: #ECEBEB;
 .intro-message > h1 {
 	margin: 0;
 	font-size: 5em;
-	font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: myriadproreg, "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-weight: 400;
 	letter-spacing: 3px;
 }
@@ -270,7 +289,7 @@ color: #ECEBEB;
 .intro-message > h3 {
 	margin: 0;
 	font-size: 2.8em;
-	font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: myriadproreg, "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-weight: 300;
 	letter-spacing: 0px;
 	margin-top: 10px;
@@ -291,6 +310,7 @@ color: #ECEBEB;
 .content-section-b {
 	border-top: 1px solid #e7e7e7;
 	border-bottom: 1px solid #e7e7e7;
+	background: white;
 	padding: 90px 0; 
 }
 
@@ -1026,6 +1046,7 @@ color: #ECEBEB;
 	transition: none !important;
 }
 
+
 /* Media Queries */
 /* Media queries!
 -------------------------------------------------------------------------------*/
@@ -1058,12 +1079,13 @@ color: #ECEBEB;
 			padding-top: 50px;
 			padding-bottom: 50px;
 			color: #f8f8f8;
-		    background-image: none; 
+		    background-image: url(../img/road.jpg); 
 			background-size: cover;
 			text-align: center;
-			background-color: #34495e;
 		}
 		
+		#bgvid { display: none; }
+
 		h1, .h1 {
 			font-size: 50px;
 		}
@@ -1073,7 +1095,6 @@ color: #ECEBEB;
 		}
 		#gallery1{display:none}
 		
-		.button_down {display:none}
 		
 		
 	}
@@ -1246,7 +1267,7 @@ p.copyright {
 	color:#FFFFFF; 
 	margin-top: 10px; 
 	font-size:16px;
-	font-family:"Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	padding: 20px 0;
 }
 
@@ -1276,6 +1297,6 @@ p.copyright {
 }
 
 .modal-header h3{
-	font-family:"Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family:myriadproreg, "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 }

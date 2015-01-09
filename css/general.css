@@ -332,10 +332,10 @@ color: #ECEBEB;
 	background-color: #980000 ;
 
 }
-.signup input {
+#signup input {
 	float:left;
 }
- 
+
 /* Style for form modal */
 .content-style-form {
 	position: relative;

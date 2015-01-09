@@ -127,23 +127,41 @@
 
 
 	<!-- Sign Up -->
-	<div  class="content-section-c" id="signup" style="border:0">
+	<div  class="content-section-c" id="signup" style="border:0" >
 		<div class="container">
 			<div class="row">
-			<div class="col-md-6 col-md-offset-3 text-center white">
-				<h2>Stay in Sync.</h2>
-				<p class="lead" style="margin-top:0">We'll email you when Heartbeat is available on Google Play!</p>
-			</div>
-			<div class="col-md-6 col-md-offset-3 text-center wow pulse" class="content-style-form content-style-form-4 ">
-				 <form style="text-align:center" action="https://tinyletter.com/sw5813" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/sw5813', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
-				 	<div class="signup">
-					 	<p><input type="text" name="email" id="tlemail" placeholder="Email" /></p>
-					 	<input type="hidden" value="1" name="embed"/>
-					 	<input type="submit" value="Sign Up" />
+				<div class="col-md-6 col-md-offset-3 text-center white">
+					<h2>Stay in Sync.</h2>
+					<p class="lead" style="margin-top:0">We'll email you when Heartbeat is available on Google Play!</p>
+				</div>
+				<div class="col-md-6 col-md-offset-3 text-center wow pulse">
+					 <form action="https://tinyletter.com/sw5813" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/sw5813', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
+					 	<div id="signup">
+					 		<p><input type="email" name="email" id="tlemail" placeholder="Email" style="width: 80%"/></p>
+					 		<input type="hidden" value="1" name="embed"/>
+					 		<input type="submit" value="Sign Up" style="width: 20%" />
+					 	</div>
+					 </form>
+	         		
+	         		<!-- Not sure why, but getting rid of this causes the navbar to stop sticking, so just leaving it-->
+					<div class="mockup-content" style="display:none">
+						<div class="morph-button  morph-button-inflow morph-button-inflow-1">
+							<button type="button "><span>Subscribe to Newsletter</span></button>
+							<div class="morph-content">
+								<div>
+									<div class="content-style-form content-style-form-4 ">
+										<h2 class="morph-clone">Subscribe to Newsletter</h2>
+										<form>
+											<p><label>Email</label><input type="text"/></p>
+											<p><button>Connect Me!</button></p>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
-				</form>
-         
-			</div>	
+
+				</div>	
 			</div>
 		</div>
 	</div>

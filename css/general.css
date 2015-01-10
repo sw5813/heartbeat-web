@@ -1,5 +1,5 @@
 @font-face {
-    font-family: myriadpro;
+    font-family: myriadprocond;
     src: url(../fonts/myriad-pro/MYRIADPRO-COND.woff);
 }
 
@@ -18,9 +18,9 @@ body, html {
 	overflow-x:hidden;
 }
 
-::-moz-selection{background:#1abc9c;color:#FFF}
+::-moz-selection{background:#ffddbb;color:#FFF}
 
-::selection{background:#1abc9c;color:#FFF}
+::selection{background:#ffddbb;color:#FFF}
 
 .abcen{position: absolute;bottom: 1%;}
 
@@ -88,7 +88,7 @@ margin: auto;
 
 .h1_home{
 	font-size: 60px;
-	font-family: myriadpro;
+	font-family: myriadprocond;
 	font-weight: 300;
 	letter-spacing: 4px;
 }
@@ -372,7 +372,7 @@ color: #ECEBEB;
 .content-style-form input[type="password"] {
 	padding: 10px;
 	width: 70%;
-	border: 2px solid #ebd3bd;
+	border: 3px solid #ebd3bd;
 	background: transparent;
 	color: #b09a86;
 	font-weight: 300;
@@ -381,8 +381,8 @@ color: #ECEBEB;
 
 .content-style-form input[type="email"]:focus,
 .content-style-form input[type="password"]:focus {
-	border-color: #e75854;
-	color: #e75854;
+	border-color: #ffffff;
+	color: #ffffff;
 }
 
 .content-style-form input:focus {
@@ -391,7 +391,7 @@ color: #ECEBEB;
 
 .content-style-form input[type="submit"] {
 	display: block;
-	padding: 0.80em;
+	padding: 0.87em;
 	width: 30%;
 	border: none;
 	background: #e75854;
@@ -400,6 +400,11 @@ color: #ECEBEB;
 	letter-spacing: 1px;
 	font-weight: 800;
 	font-size: 1.25em;
+}
+
+.content-style-form input[type="submit"]:focus {
+	background: #f75854;
+	color: white;
 }
 
 .content-style-form .icon-close {
@@ -1073,6 +1078,11 @@ color: #ECEBEB;
 			font-size: 20px;
 		}
 		#gallery1{display:none}
+
+		.content-style-form input[type="submit"] {
+			font-size: 1em;
+			padding: 1.3em;
+		}
 		
 		
 		

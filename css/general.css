@@ -111,8 +111,9 @@ margin: auto;
 }
 #owl-demo-1 .item img{
   display: block;
-  width: 100%;
-  height: auto;
+  width: auto;
+  height: 100%;
+  margin: auto;
 }
 
 /*magnific */

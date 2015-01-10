@@ -268,6 +268,25 @@
 			</div>
 		</div>
 	</div>
+
+	<!-- Team -->
+	<div id="teamblock" class="content-section-a" style="display:none">
+		<div class="container">
+			<div class="col-md-6 col-md-offset-3 text-center">
+				<h2>The Team</h2>
+			</div>
+	      	<div class="row">
+		      	<div class="col-sm-6" style="text-align:center">
+		      		<img src="img/jenhead.png" style="margin:auto" />
+		      		<h4><a href="https://www.linkedin.com/profile/view?id=313898149">Jennifer Ren</a></h4>Aesthete<br>Human Biology @ Stanford '17
+		      	</div>
+		      	<div class="col-sm-6" style="text-align:center">
+		      		<img src="img/summerhead.png" style="margin:auto" />
+					<h4><a href="http://www.sumwu.me">Summer Wu</a></h4>Code Monkey<br>Computer Science @ Yale '18
+		      	</div>
+		    </div>
+		</div>
+	</div>
 	
 
     <div class="footer">
@@ -298,7 +317,7 @@
 	      		<img src="img/summerhead.png" style="margin:auto" />
 				<h4><a href="http://www.sumwu.me">Summer Wu</a></h4>Code Monkey<br>Computer Science @ Yale '18
 	      	</div>
-	      </div>
+	    </div>
       </div>
       <div class="modal-footer">
         <button class="btn btn-info" data-dismiss="modal" type="button">Close</button>
@@ -317,7 +336,7 @@
 	<script type="text/javascript">
 	  jQuery(function($) {
 		$(document).ready( function() {
-
+			// Since chrome is buggy, just disable navbar and modal if it's desktop
 			var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
 		    if(!isChrome || $(window).width() <= 767) {
 	    		$('.navbar-default').stickUp();
@@ -325,7 +344,17 @@
 				$(".logo").click(function(){
 					$('#team').modal('show')
 				});
-
+		    } else {
+		    	$(".logo").click(function(){
+				    var el = document.getElementById("teamblock");
+				    if ( el && el.style.display == 'block') {  
+				        el.style.display = 'none';
+				    } else {
+				        el.style.display = 'block';
+				        var top = $('.footer').position().top;
+						$(window).scrollTop( top );
+				    }
+				});
 		    }
 
 		    // Pause video when the user's not on it

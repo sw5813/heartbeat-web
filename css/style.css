@@ -2280,7 +2280,7 @@ select[multiple].navbar-form .btn {
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-  color: #1abc9c;
+  color: #980000;
   background-color: transparent;
 }
 .navbar-default .navbar-nav > .active > a,

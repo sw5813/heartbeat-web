@@ -317,6 +317,11 @@ color: #ECEBEB;
 	padding: 90px 0; 
 }
 
+ul li {
+	display: list-item;
+	list-style-type: disc;
+}
+
 .section-heading {
 	margin-bottom: 30px;
 }

@@ -1,6 +1,4 @@
-Landing Page for Heartbeat Fitness
+Landing Page for Heartbeat Fitness App
 ====================
 
-Development: http://sw5813.github.io/heartbeat-web/
-<br>
-Production: http://www.heartbeatfitness.me/
+http://sw5813.github.io/heartbeatfitness/
